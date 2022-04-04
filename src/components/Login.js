@@ -8,7 +8,7 @@ import { auth } from "../firebase"
 
 export default function Login() {
 
-  swal("Bem vindo! Obrigado por estar aqui! Para finalidades de teste e avaliação, aconselho logar duas contas google (você pode fazer isso utilizando por exemplo uma janela regular e uma janela anônima do Chrome) pois o chat é privado e assim é possível experimentar as funcionalidades de criar uma nova conversa e convidar os usuários logados para testar os recursos de troca de mensagens.")
+  swal("Bem vindo! Para finalidades de teste e avaliação, aconselho logar duas contas google pois o chat é privado e assim é possível experimentar as funcionalidades de criar uma nova conversa e convidar os usuários logados para testar os recursos de troca de mensagens.")
 
   return (
     <div id='login-page'>

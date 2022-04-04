@@ -34,7 +34,7 @@ export default function Chats() {
         return
       }
       
-      // Get-or-Create should be in a Firebase Function
+      
       axios.get(
         'https://api.chatengine.io/users/me/',
         { headers: { 
@@ -65,19 +65,19 @@ export default function Chats() {
           .catch(e => console.log('e', e.response))
         })
       })
-      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
 
     }
   }, [user, history])
   
 
-  if (!user || loading) return <div />
+  if (!user || loading) return <div>Loading...</div>
 
   return (
     <div className='chats-page'>
       <div className='nav-bar'>
         <div className='logo-tab'>
-          Palico Chat <span role="img" aria-label="cat-emoji">🐱</span>
+          Palico Chat
         </div>
 
         <div onClick={handleLogout} className='logout-tab'>
