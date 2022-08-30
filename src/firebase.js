@@ -2,7 +2,7 @@ import firebase from "firebase/app"
 import "firebase/auth"
 
 export const auth = firebase.initializeApp({
-  apiKey: "AIzaSyBsXRA9Xp-_TNrEyNMWPcUL0k6W04U1hF8",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "unichat-e27c8.firebaseapp.com",
   projectId: "unichat-e27c8",
   storageBucket: "unichat-e27c8.appspot.com",
